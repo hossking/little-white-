@@ -1,1 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2022-03-21T18:09:48.476Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39" version="17.1.2" etag="Tor7O_ismH3cq5r2t0jh" type="github"><diagram id="nL1iAU4mYm8YHUkbEi2Z">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-21T18:19:37.302Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39" etag="nFUHbxcWZuXp0fkl2Hyp" version="17.1.2" type="github">
+  <diagram id="nL1iAU4mYm8YHUkbEi2Z" name="第 1 页">
+    <mxGraphModel dx="1038" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b5ajGhH7YJsi-_I0ocPr-1" value="机密性：&lt;br&gt;通信之前使用非对称加密传输会话密钥，&lt;br&gt;通信时使用会话密钥进行对称加密传输报文" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="750" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b5ajGhH7YJsi-_I0ocPr-2" value="完整性：&lt;br&gt;发送方使用摘要算法对报文信息进行摘要计算，之后生成指纹附在报文中发送过去；&lt;br&gt;接收方收到之后对报文信息进行摘要计算，对比指纹信息是否一致，保证数据的完整性" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="750" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b5ajGhH7YJsi-_I0ocPr-3" value="不可篡改：&lt;br&gt;服务器向CA申请证书【内容为自己的公钥】，CA使用私钥对信息进行数字签名，生成数字证书；&lt;br&gt;服务器向客户端传送数字证书，客户端收到之后使用CA的公钥对数字证书进行解密，得到服务器的公钥，&lt;br&gt;之后客户端使用服务器的公钥对信息进行加密，传送到服务器，服务器使用自己的私钥进行解密" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="34" y="290" width="760" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
