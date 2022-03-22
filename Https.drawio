@@ -1,17 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2022-03-21T18:19:37.302Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39" etag="nFUHbxcWZuXp0fkl2Hyp" version="17.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-22T06:16:09.337Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39" etag="qz0lbvtGxDcWUwYU6xXJ" version="17.1.2" type="github">
   <diagram id="nL1iAU4mYm8YHUkbEi2Z" name="第 1 页">
-    <mxGraphModel dx="1038" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="b5ajGhH7YJsi-_I0ocPr-1" value="机密性：&lt;br&gt;通信之前使用非对称加密传输会话密钥，&lt;br&gt;通信时使用会话密钥进行对称加密传输报文" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="40" y="90" width="750" height="80" as="geometry" />
+        <mxCell id="b5ajGhH7YJsi-_I0ocPr-1" value="机密性：&lt;br&gt;通信之前使用非对称加密传输会话密钥，&lt;br&gt;通信时使用会话密钥进行对称加密传输报文" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="126" y="60" width="750" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="b5ajGhH7YJsi-_I0ocPr-2" value="完整性：&lt;br&gt;发送方使用摘要算法对报文信息进行摘要计算，之后生成指纹附在报文中发送过去；&lt;br&gt;接收方收到之后对报文信息进行摘要计算，对比指纹信息是否一致，保证数据的完整性" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="40" y="190" width="750" height="90" as="geometry" />
+        <mxCell id="b5ajGhH7YJsi-_I0ocPr-2" value="完整性：&lt;br&gt;发送方使用摘要算法对报文信息进行摘要计算，之后生成指纹附在报文中发送过去；&lt;br&gt;接收方收到之后对报文信息进行摘要计算，对比指纹信息是否一致，保证数据的完整性" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="126" y="160" width="750" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="b5ajGhH7YJsi-_I0ocPr-3" value="不可篡改：&lt;br&gt;服务器向CA申请证书【内容为自己的公钥】，CA使用私钥对信息进行数字签名，生成数字证书；&lt;br&gt;服务器向客户端传送数字证书，客户端收到之后使用CA的公钥对数字证书进行解密，得到服务器的公钥，&lt;br&gt;之后客户端使用服务器的公钥对信息进行加密，传送到服务器，服务器使用自己的私钥进行解密" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="34" y="290" width="760" height="130" as="geometry" />
+        <mxCell id="b5ajGhH7YJsi-_I0ocPr-3" value="不可篡改：&lt;br&gt;服务器向CA申请证书【内容为自己的公钥】，CA使用私钥对信息进行数字签名，生成数字证书；&lt;br&gt;服务器向客户端传送数字证书，客户端收到之后使用CA的公钥对数字证书进行解密，得到服务器的公钥，&lt;br&gt;之后客户端使用服务器的公钥对信息进行加密，传送到服务器，服务器使用自己的私钥进行解密" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="120" y="260" width="760" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="180" y="520" width="190" height="555" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="180" y="525" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.397;entryDx=0;entryDy=0;fontSize=16;entryPerimeter=0;exitX=1.022;exitY=0.165;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="R0wtGRxD3cP8mvYGMlst-3" target="R0wtGRxD3cP8mvYGMlst-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="535" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-3" value="&lt;font style=&quot;font-size: 16px&quot;&gt;客户端生成一个随机数，并附带上TLS版本号发送到服务端&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="185" y="520" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="630" y="525" width="190" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-7" value="Client Hello阶段" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="30" y="540" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-11" value="将服务端的随机数存储起来，取出证书，发送ACK确认" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+          <mxGeometry x="180" y="595" width="190" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.003;entryY=0.376;entryDx=0;entryDy=0;fontSize=16;entryPerimeter=0;" edge="1" parent="1" source="R0wtGRxD3cP8mvYGMlst-12" target="R0wtGRxD3cP8mvYGMlst-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="180" y="690" width="190" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-15" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="630" y="600" width="190" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-16" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="525" width="190" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-47" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.019;exitY=0.609;exitDx=0;exitDy=0;entryX=0.998;entryY=0.848;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=24;exitPerimeter=0;" edge="1" parent="1" source="R0wtGRxD3cP8mvYGMlst-17" target="R0wtGRxD3cP8mvYGMlst-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-17" value="① 用自己的私钥解密报文，取出随机数pre-master信息；&lt;br&gt;②发送改用会话密钥通信的通知；&lt;br&gt;③ 发送协商阶段报文包的摘要信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="630" y="705" width="190" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-24" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="R0wtGRxD3cP8mvYGMlst-19" target="R0wtGRxD3cP8mvYGMlst-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-19" value="&lt;font style=&quot;font-size: 16px&quot;&gt;服务端生成一个随机数，并附带上TLS版本号以及数字证书发送到客户端&lt;br&gt;同时发送一个ACK确认客户端的随机数&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="630" y="615" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-23" value="&lt;font style=&quot;font-size: 16px&quot;&gt;服务端将客户端随机数存储起来&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="635" y="522.5" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-26" value="Server Hello阶段" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="830" y="621.25" width="150" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-27" value="先校验版本号是否支持，如果版本不支持就返回通信错误" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="840" y="530" width="150" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-28" value="先用CA的公钥校验证书，如果无误则从中取出服务端的公钥信息" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="600" width="150" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-30" value="① 使用服务端的公钥将随机数(pre-master)加密，发送过去；&lt;br&gt;② 发送改用会话密钥通信的通知；&lt;br&gt;③ 发送协商阶段报文包的摘要信息" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="185" y="715" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-43" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="180" y="945" width="640" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-44" value="使用会话密钥进行通信" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;labelBorderColor=#FF250D;" vertex="1" parent="1">
+          <mxGeometry x="350" y="972.5" width="300" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-45" value="生成会话密钥，总共有三个部分：&lt;br&gt;① 服务端随机数&lt;br&gt;② 客户端随机数&lt;br&gt;③ pre-master随机数" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="695" width="150" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="R0wtGRxD3cP8mvYGMlst-46" value="生成会话密钥，总共有三个部分：&lt;br&gt;① 服务端随机数&lt;br&gt;② 客户端随机数&lt;br&gt;③ pre-master随机数" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="840" y="737.5" width="150" height="125" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
